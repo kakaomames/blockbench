@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ja">
 <head>
 	<title>Blockbench</title>
 	<meta charset="utf-8" />
@@ -49,11 +49,11 @@
 		}
 	</script>
 	<div id="loading_error_message" style="display: none;">
-		<div>An error occurred while loading Blockbench</div>
+		<div>ブロックベンチの読み込み中にエラーが発生しました</div>
 		<div id="loading_error_detail" style="color: var(--color-subtle_text);"></div>
-		<button onclick="window.Blockbench ? window.Blockbench.reload() : window.location.reload(true)" class="large" style="margin-right: auto; margin-left: auto;">Reload</button>
-		<button onclick="factoryResetAndReload()" class="large" style="margin-right: auto; margin-left: auto;">Factory Reset</button>
-		<button onclick="window.close()" class="large" style="margin-right: auto; margin-left: auto;">Quit</button>
+		<button onclick="window.Blockbench ? window.Blockbench.reload() : window.location.reload(true)" class="large" style="margin-right: auto; margin-left: auto;">再読み込みする</button>
+		<button onclick="factoryResetAndReload()" class="large" style="margin-right: auto; margin-left: auto;">工場出荷時のリセット</button>
+		<button onclick="window.close()" class="large" style="margin-right: auto; margin-left: auto;">やめる</button>
 	</div>
 	<script type="module" src="dist/bundle.js"></script>
 
@@ -61,7 +61,7 @@
 
 	<div id="overlay_message_box" style="display: none;">
 		<div>
-			<h3><i class="material-icons icon">keyboard</i><span class="tl">keybindings.recording</span></h3>
+			<h3><i class="material-icons icon">キーボード</i><span class="tl">keybindings.recording</span></h3>
 			<p class="tl">keybindings.press</p>
 			<button class="tl" onclick="Keybinds.recording.stopRecording()">dialog.cancel</button>
 			<button class="tl" onclick="Keybinds.recording.clear().stopRecording()">keybindings.clear</button>
@@ -81,7 +81,7 @@
 		<div class="app-drag-region" id="header_free_bar"></div>
 		<div id="update_menu"></div>
 		<div id="settings_profiles_header_menu" class="hidden tool">
-			<i class="material-icons icon">manage_accounts</i>
+			<i class="material-icons icon">アカウントを管理する</i>
 		</div>
 		<ul id="windows_window_menu" hidden>
 			<li id="window_controls_button_minimize">
@@ -213,4 +213,5 @@
 		}
 	</script>
 </body>
+
 </html>
